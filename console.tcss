@@ -1,0 +1,35 @@
+Screen {
+    align: center middle;
+}
+
+#control-panel {
+    height: auto;
+    margin: 1 1;
+    padding: 0 0;
+}
+
+Button {
+    margin: 0 1;
+    width: auto;
+    min-width: 8;
+    height: auto;
+}
+
+Button.hidden {
+    display: none;
+}
+
+#console-container {
+    height: auto;
+}
+
+ScriptRunner {
+    height: 1fr;
+}
+
+ScriptRunner #output {
+    border: solid $primary-background;
+    background: $surface-darken-2;
+    margin: 1 1;
+    padding: 1 2;
+}
