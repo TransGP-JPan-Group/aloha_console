@@ -2,29 +2,35 @@ Screen {
     align: center middle;
 }
 
-#control-panel {
+.control-panel {
     height: auto;
     margin: 1 1;
     padding: 0 0;
+    align: left middle;
 }
 
 Button {
     margin: 0 1;
     width: auto;
     min-width: 8;
-    height: auto;
+    border: none;
 }
 
-Button.hidden {
+Input {
+    margin: 0 1;
+    width: auto;
+    height: auto;
+    min-width: 8;
+    border: none;
+}
+
+.hidden {
     display: none;
-}
-
-#console-container {
-    height: auto;
 }
 
 ScriptRunner {
     height: 1fr;
+    margin: 0 0;
 }
 
 ScriptRunner #output {
@@ -32,4 +38,5 @@ ScriptRunner #output {
     background: $surface-darken-2;
     margin: 1 1;
     padding: 1 2;
+    min-height: 20;
 }

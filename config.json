@@ -1,0 +1,16 @@
+{
+    "scripts": {
+        "core": {
+            "name": "Aloha Core",
+            "command": "./mock_script.sh -c core"
+        },
+        "data": {
+            "name": "Data Collection",
+            "command": "./mock_script.sh -e ${episode}"
+        },
+        "sleep": {
+            "name": "Sleep Arm",
+            "command": "./mock_script.sh -s sleep"
+        }
+    }
+}
