@@ -10,7 +10,6 @@ import threading
 import signal
 import os
 import json
-from pathlib import Path
 from string import Template
 
 class ScriptConfig:
@@ -68,7 +67,7 @@ class ScriptRunner(Static):
             self.app.log(f"Launching {self.script_name}", command=command)
             
             self.process = subprocess.Popen(
-                command,
+                ["bash", "-c", " ".join(command)],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
                 text=True,
